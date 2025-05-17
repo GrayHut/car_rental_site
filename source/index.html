@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Site On Steroids</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <a href="#" class="logo">
+                        <img src="\assets\images\logo-white.png" alt="logo" class="logo-white">
+                        <img src="\assets\images\logo-dark.png" alt="logo" class="logo-dark">
+                        <span>Str8 Rentals</span>
+                    </a>
+                </div>
+                <div class="nav-menu-btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#deals">Rental Units</a></li>
+                <li><a href="#clients">Testimonials</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button class="btn">Register</button>
+            </div>
+        </nav>
+        <div class="header-container" id="home">
+            <div class="header-image">
+                <img src="\assets\images\header.png" alt="header">
+            </div>
+            <div class="header-content">
+                <h2>👌 100% Your Trusted Car Rental Partners KE</h2>
+                <h1>Fast, Easy, Convenient......& Reliable</h1>
+                <p class="section-description">The open class likely controls the visibility or position of the navigation links (e.g., sliding in/out on a mobile menu).</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="header-form">
+        <form action="/">
+            <div class="input-group">
+                <label for="location">Pick Up and Return location</label>
+                <input type="text" name="location" id="location" placeholder="Nairobi, Kenya">
+            </div>
+            <div class="input-group">
+                <label for="location">Pick Up Date</label>
+                <input type="text" name="start" id="start" placeholder="May 14, 8:34">
+            </div>
+            <div class="input-group">
+                <label for="location">Return Date</label>
+                <input type="text" name="stop" id="stop" placeholder="May 14, 8:34">
+            </div>
+            <button class="btn">Search<i class="ri-search-line"></i></button>
+        </form>
+    </section>
+
+    <section class="section-container about-container" id="about">
+        <h2 class="section-header">How it works</h2>
+        <p class="section-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+        <div class="about-grid">
+            <div class="about-card">
+                <span><i class="ri-map-pin-fill"></i></span>
+                <h4>Select Location</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                    as opposed to using 'Content here, content here', making it look like readable English
+                </p>
+            </div>
+            <div class="about-card">
+                <span><i class="ri-calendar-event-fill"></i></span>
+                <h4>Pick a date</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                    as opposed to using 'Content here, content here', making it look like readable English
+                </p>
+            </div>
+            <div class="about-card">
+                <span><i class="ri-roadster-line"></i></span>
+                <h4>Book your car</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                    as opposed to using 'Content here, content here', making it look like readable English
+                </p>
+            </div>
+            <div class="about-card">
+                <span><i class="ri-roadster-line"></i></span>
+                <h4>Pick your car</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                    as opposed to using 'Content here, content here', making it look like readable English
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals" id="deals">
+        <div class="section-container deals-container">
+            <h2 class="section-header">Popular deals</h2>
+            <p class="section-description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto b
+                eatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
+                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+            </p>
+            <div class="deals-tabs">
+                <button class="btn active" data-id="Tesla">Tesla</button>
+                <button class="btn" data-id="Mitsubishi">Mitsubishi</button>
+                <button class="btn" data-id="Mazda">Mazda</button>
+                <button class="btn" data-id="Toyota">Toyota</button>
+                <button class="btn" data-id="Honda">Honda</button>
+            </div>
+            <div class="tab-content active" id="Tesla">
+                <div class="deals-card">
+                    <img src="/assets/images/deals-1.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Tesla Model S</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$100 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-2.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Tesla Model Y</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$200 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-3.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-4.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Mitsubishi</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Manual
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km/l
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$50 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-5.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Mitsubishi Outlander</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-6.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-7.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-8.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-9.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-10.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-11.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-12.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-13.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-14.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="deals-card">
+                    <img src="/assets/images/deals-15.png" alt="deals">
+                    <div class="deals-rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span>(450)</span>
+                    </div>
+                    <h4>Tesla Model X</h4>
+                    <div class="deals-card-grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>Autopilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400km
+                        </div>
+                        <div>
+                            <span><i class="ri-car-fill"></i></span>Electric
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals-card-footer">
+                        <h3>$300 <span>/per day</span></h3>
+                        <a href="a">
+                            Rent Now
+                            <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="choose-container" id="choose">
+      <div class="choose-image">
+        <img src="/assets/images/choose.png" alt="choose" />
+      </div>
+      <div class="choose-content">
+        <h2 class="section-header">Why choose us</h2>
+        <p class="section-description">
+          Discover the difference with our car rental service. We offer reliable
+          vehicles, exceptional customer service, and competitive pricing to
+          ensure a seamless rental experience.
+        </p>
+        <div class="choose-grid">
+          <div class="choose-card">
+            <span><i class="ri-customer-service-line"></i></span>
+            <div>
+              <h4>Customer Support</h4>
+              <p>Our dedicated support team is available to assist you 24/7.</p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div>
+              <h4>Many Locations</h4>
+              <p>
+                Convenient pick-up and drop-off locations to suit your travel
+                needs.
+              </p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <span><i class="ri-wallet-line"></i></span>
+            <div>
+              <h4>Best Price</h4>
+              <p>Enjoy competitive rates and great value for every rental.</p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <span><i class="ri-user-star-line"></i></span>
+            <div>
+              <h4>Experience Driver</h4>
+              <p>Reliable, professional drivers available upon request.</p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <span><i class="ri-verified-badge-line"></i></span>
+            <div>
+              <h4>Verified Brands</h4>
+              <p>Choose from trusted and well-maintained car brands.</p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <span><i class="ri-calendar-close-line"></i></span>
+            <div>
+              <h4>Free Cancellations</h4>
+              <p>Flexible bookings with free cancellation options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-container">
+        <div class="subscribe-image">
+            <img src="/assets/images/subscribe.png" alt="subscribe">
+        </div>
+        <div class="subscribe-content">
+            <h2 class="section-header">Subscribe for the latest rental deals</h2>
+            <p class="section-description">But I must explain to you how all this mistaken idea of 
+                denouncing pleasure and praising pain was born and I will give you a complete account of the system, 
+                and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
+                but because those who do not know how to pursue pleasure rationally encounter consequences
+            </p>
+            <form action="/">
+                <input type="text" placeholder="Your Email">
+                <button class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-container client-container" id="client">
+        <h2 class="section-header">What people say about us.....</h2>
+        <p class="section-description">"At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi 
+            sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, 
+            id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="client-card">
+                        <div class="client-details">
+                            <img src="/assets/images/client-1.jpg" alt="client">
+                            <div>
+                                <h4>Owen Ondieki</h4>
+                                <div class="client-rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are 
+                            so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
+                            that they cannot foresee the pain and trouble that are bound to ensue; 
+                            and equal blame belongs to those who fail in their duty through weakness
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-card">
+                        <div class="client-details">
+                            <img src="/assets/images/client-2.jpg" alt="client">
+                            <div>
+                                <h4>Owen Ondieki</h4>
+                                <div class="client-rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are 
+                            so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
+                            that they cannot foresee the pain and trouble that are bound to ensue; 
+                            and equal blame belongs to those who fail in their duty through weakness
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-card">
+                        <div class="client-details">
+                            <img src="/assets/images/client-3.jpg" alt="client">
+                            <div>
+                                <h4>Owen Ondieki</h4>
+                                <div class="client-rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are 
+                            so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
+                            that they cannot foresee the pain and trouble that are bound to ensue; 
+                            and equal blame belongs to those who fail in their duty through weakness
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-card">
+                        <div class="client-details">
+                            <img src="/assets/images/client-4.jpg" alt="client">
+                            <div>
+                                <h4>Owen Ondieki</h4>
+                                <div class="client-rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are 
+                            so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
+                            that they cannot foresee the pain and trouble that are bound to ensue; 
+                            and equal blame belongs to those who fail in their duty through weakness
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <img src="/assets/images/logo-white.png" alt="logo">
+                        <span>Str8 Rentals</span>
+                    </a>
+                </div>
+                <p>These cases are perfectly simple and easy to distinguish. In a free hour, 
+                    when our power of choice is untrammelled and when nothing prevents our being able to do what we like best,
+                </p>
+                <ul class="footer-socials">
+                    <li>
+                        <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-twitter-x-line"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-youtube-line"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#deals">Rental Deals</a></li>
+                    <li><a href="#choose">Why choose us</a></li>
+                    <li><a href="#client">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Vehicle Models</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Toyota Corrola</a></li>
+                    <li><a href="#">Toyota Corrola</a></li>
+                    <li><a href="#">Toyota Corrola</a></li>
+                    <li><a href="#">Toyota Corrola</a></li>
+                    <li><a href="#">Toyota Corrola</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-socials">
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-customer-service-2-fill"></i>+254722209026</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-customer-service-2-fill"></i>+254722209026</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-customer-service-2-fill"></i>+254722209026</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-customer-service-2-fill"></i>+254722209026</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bar">
+            CopyRights @GrayHut. All rights reserved...
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
