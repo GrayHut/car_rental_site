@@ -617,7 +617,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.footer-socials a{
+.footer-socials a {
     padding: 6px 8px;
     font-size: 1.125rem;
     color: var(--text-dark);
